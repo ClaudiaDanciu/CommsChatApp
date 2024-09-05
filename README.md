@@ -19,14 +19,14 @@ The chat allows messages to be exchanged between the client and the server indef
 
 ## How to Compile and Run
 
-###Step 1: Clone the repository:
+### Step 1: Clone the repository:
 git clone https://github.com/ClaudiaDanciu/CommsChatApp
 
-###Step 2: Compile the Code
+### Step 2: Compile the Code
 To compile the project, use the following command to enable C++11:
 g++ -std=c++11 Main.cpp -o CommsChatApp
 
-###Step 3:Run the Server:
+### Step 3:Run the Server:
 1. Open a Terminal window for the server.
 2. Ensure that the preprocessor directive #define SERVER_MODE is uncommented in Main.cpp to run the server:
 #define SERVER_MODE // Uncomment for server mode
@@ -35,7 +35,7 @@ g++ -std=c++11 Main.cpp -o CommsChatApp
 ./CommsChatApp
 4. The server will start and wait for a client connection:
 Server initialized and waiting for connections...
-###Step 4: Run the Client
+### Step 4: Run the Client
 1. Open another Terminal window for the client.
 2. Ensure that the preprocessor directive #define SERVER_MODE is commented out in Main.cpp to run the client:
 //#define SERVER_MODE // Comment for client mode
@@ -43,7 +43,7 @@ Server initialized and waiting for connections...
 g++ -std=c++11 Main.cpp -o CommsChatApp
 ./CommsChatApp
 4. The client will connect to the server, and you can start exchanging messages.
-###Step 5: Exchange Messages: 
+### Step 5: Exchange Messages: 
 - After running the client, type a message in the client terminal
 - The server will receive the message and can respond
 - This process will repeat until the client types "QUIT"
